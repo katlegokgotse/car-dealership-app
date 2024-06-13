@@ -3,7 +3,7 @@ const connectToDatabase = mysql.createConnection({
     host: 'localhost',
     user: 'user',
     password: 'password',
-    database: 'car_dealershipDB'
+    database: 'dealershipDB'
 })
 
 function connection(){
