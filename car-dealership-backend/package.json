@@ -13,6 +13,7 @@
     "express": "^4.19.2"
   },
   "dependencies": {
+    "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1"
   }
 }
