@@ -1,4 +1,5 @@
 CREATE DATABASE dealershipDB CHARACTER SET UTF8 COLLATE utf8_general_ci;
+
 USE dealershipDB;
 
 CREATE TABLE USERS(
@@ -24,7 +25,7 @@ CREATE TABLE CARS(
     car_mileage VARCHAR(10) NOT NULL,
     car_price DOUBLE NOT NULL,
     car_colour VARCHAR(10) NOT NULL,
-    car_used BOOLEAN,
+    car_used ENUM('used', 'new'),
     car_image VARCHAR(128) NOT NULL,
     PRIMARY KEY(car_id)
 );
