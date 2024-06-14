@@ -1,8 +1,8 @@
 const mysql = require('mysql')
 const connectToDatabase = mysql.createConnection({
     host: 'localhost',
-    user: 'user',
-    password: 'password',
+    user: 'root',
+    password: '',
     database: 'dealershipDB'
 })
 

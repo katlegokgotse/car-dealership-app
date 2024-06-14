@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const { connection } = require('./app');
 
 const app = express()
 const port = 3000;
@@ -7,5 +8,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, function() {
-    console.log(`Listening on port ${port}`)
+    console.log(`Listening on port ${port}`);
+    connection()
 })

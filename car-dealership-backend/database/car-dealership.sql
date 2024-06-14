@@ -1,7 +1,5 @@
 CREATE DATABASE dealershipDB CHARACTER SET UTF8 COLLATE utf8_general_ci;
-
 USE dealershipDB;
-
 CREATE TABLE USERS(
     user_id INT NOT NULL AUTO_INCREMENT,
     name varchar(30) NOT NULL,
@@ -15,7 +13,7 @@ CREATE TABLE ADMIN(
     admin_password VARCHAR(128) NOT NULL,
     user_id INT NOT NULL,
     PRIMARY KEY(admin_id),
-    FOREIGN KEY (user_id) REFERENCES USERS(user_id);
+    FOREIGN KEY (user_id) REFERENCES USERS(user_id)
 );
 
 CREATE TABLE CARS(
