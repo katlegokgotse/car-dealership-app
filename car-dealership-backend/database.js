@@ -1,10 +1,11 @@
-const mysql = require('mysql')
-const connectToDatabase = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'dealershipDB'
-})
+import mysql,{ createPool } from 'mysql2';
+
+const connectToDatabase = mysql.createPool({
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
+}).promise();
 
 function connection(){
     connectToDatabase.connect((error) => {
