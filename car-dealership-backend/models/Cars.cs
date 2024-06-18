@@ -1,5 +1,4 @@
 ﻿using car_dealership_backend.models;
-using System;
 public class Cars
 {
 	public int CarId { get; set; }
