@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\PersonalProjects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\PersonalProjects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj": {
+    "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\PersonalProjects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj",
         "projectName": "car-dealership-backend",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\PersonalProjects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\car-dealership\\car-dealership-backend\\car-dealership-backend.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\PersonalProjects\\car-dealership\\car-dealership-backend\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\Programming\\Software_Development\\Projects\\car-dealership\\car-dealership-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
