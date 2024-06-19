@@ -1,6 +1,12 @@
 ﻿using car_dealership_backend.models;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+[Table("Cars")]
 public class Cars
 {
+    [Key]
 	public int CarId { get; set; }
 	public string? CarMake { get; set; }
 	public string? CarModel { get; set; }
