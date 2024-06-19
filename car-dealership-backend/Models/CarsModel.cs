@@ -17,5 +17,5 @@ public class CarModels
     public decimal CarPrice { get; set; }
     public string? CarImage { get; set; }
     public AdvertisementState CarAdvertisementState { get; set; }
-    public ICollection<InterestedPersons>? InterestedPersons { get; set; }
+    public ICollection<InterestedPerson>? InterestedPersons { get; set; }
 }
