@@ -50,7 +50,6 @@ public class CarsController : ControllerBase
         }
 
         // Update existingCar with carModel properties
-
         return NoContent();
     }
     // DELETE action
