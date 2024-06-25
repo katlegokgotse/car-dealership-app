@@ -1,9 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace car_dealership_backend;
 
-[Table("Administrator")]
+[Table("Administrators")]
 public class AdministratorModels
 {
     [Key]

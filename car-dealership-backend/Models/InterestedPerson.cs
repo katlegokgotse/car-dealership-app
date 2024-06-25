@@ -3,7 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace car_dealership_backend;
 
-[Table("InterestedPerson")]
 public class InterestedPerson
 {
     [Key]

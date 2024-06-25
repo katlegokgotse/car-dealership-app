@@ -1,15 +1,23 @@
+using car_dealership_backend.Data;
 using Microsoft.AspNetCore.Mvc;
-
-namespace car_dealership_backend.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class InterestedPersonController : ControllerBase
+namespace car_dealership_backend.Controllers
 {
-    private readonly ILogger<InterestedPersonController> _logger;
-
-    public InterestedPersonController(ILogger<InterestedPersonController> logger)
+    [Route("car_dealership_backend/InterestedPerson")]
+    [ApiController]
+    public class InterestedPersonController : ControllerBase
     {
-        _logger = logger;
+        private readonly ApplicationDBContext _context;
+
+        public InterestedPersonController(ApplicationDBContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public IActionResult GetInterestedPerson()
+        {
+            var person = _context.interestedPeople.ToList();
+            return Ok(person);
+        }
     }
 }

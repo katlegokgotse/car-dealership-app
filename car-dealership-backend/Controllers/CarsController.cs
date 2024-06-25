@@ -1,70 +1,80 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace car_dealership_backend.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class CarsController : ControllerBase
+namespace car_dealership_backend.Controllers
 {
-    private readonly ILogger<CarsController> _logger;
-    private readonly List<CarModels> _cars;
-    public CarsController(ILogger<CarsController> logger)
+    [ApiController]
+    [Route("[controller]")]
+    public class CarsController : ControllerBase
     {
-        _logger = logger;
-        _cars = new List<CarModels>();
-    }
-    // GET all action
-    [HttpGet]
-    public ActionResult<List<CarModels>> GetModels()
-    {
-        return _cars;
-    }
-
-    // Create action
-    [HttpPost]
-    public ActionResult<CarModels> CreateCar(CarModels carModels)
-    {
-        _cars.Add(carModels);
-        return CreatedAtAction(nameof(GetCars), new { id = carModels.CarId }, carModels);
-    }
-    // GET by Id action
-    [HttpGet("{id}")]
-    public IActionResult<CarModels> GetCars(int id)
-    {
-        var car = _cars.Find(car => car.CarId == id);
-        if (car == null)
-            return NotFound();
-        return car;
-    }
-    // PUT action
-    [HttpPut("{id}")]
-    public IActionResult UpdateCars(int id, CarModels carModels)
-    {
-        //
-        if (id != carModels.CarId) return BadRequest();
-
-        var existingCar = _cars.Find(c => c.CarId == id);
-        if (existingCar == null)
+        private readonly ILogger<CarsController> _logger;
+        private readonly List<CarModels> _cars;
+        public CarsController(ILogger<CarsController> logger)
         {
-            return NotFound();
+            _logger = logger;
+            _cars = new List<CarModels>();
+        }
+        // GET all cars
+        [HttpGet]
+        public ActionResult<List<CarModels>> GetCars()
+        {
+            return _cars;
         }
 
-        // Update existingCar with carModel properties
-        return NoContent();
-    }
-    // DELETE action
-    [HttpDelete("{id}")]
-    public IActionResult DeleteCar(int id)
-    {
-        //
-        var car = _cars.Find(c => c.CarId == id);
-        if (car == null)
+        // GET car by ID
+        [HttpGet("{id}")]
+        public IActionResult GetCar(int id)
         {
-            return NotFound();
+            var car = _cars.FirstOrDefault(c => c.CarId == id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+            return Ok(car);
         }
 
-        _cars.Remove(car);
+        // POST create a new car
+        [HttpPost]
+        public ActionResult<CarModels> CreateCar(CarModels carModel)
+        {
+            _cars.Add(carModel);
+            return CreatedAtAction(nameof(GetCar), new { id = carModel.CarId }, carModel);
+        }
 
-        return NoContent();
+        // PUT update a car
+        [HttpPut("{id}")]
+        public IActionResult UpdateCar(int id, CarModels carModel)
+        {
+            if (id != carModel.CarId)
+            {
+                return BadRequest();
+            }
+
+            var existingCar = _cars.FirstOrDefault(c => c.CarId == id);
+            if (existingCar == null)
+            {
+                return NotFound();
+            }
+
+            // Update existingCar with carModel properties
+            existingCar.CarModel = carModel.CarModel; // Example update
+
+            return NoContent();
+        }
+
+        // DELETE a car
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCar(int id)
+        {
+            var car = _cars.FirstOrDefault(c => c.CarId == id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+            _cars.Remove(car);
+            return NoContent();
+        }
     }
 }
