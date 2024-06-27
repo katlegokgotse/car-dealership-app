@@ -1,6 +1,10 @@
-import React from 'react'
-
-type Props = {
+import React from 'react';
+import './Card.css';
+interface Props{
+    image: string;
+    model: string;
+    make: string;
+    cost: string;
 }
 
 const Card = (props: Props) => {

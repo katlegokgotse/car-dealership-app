@@ -1,10 +1,17 @@
 import React from 'react'
+import Card from '../Cards/Card'
 
-type Props = {}
+interface Props{
 
-const CardList = (props: Props) => {
+}
+
+const CardList = () => {
   return (
-    <div>CardList</div>
+    <div>
+        <Card/>
+        <Card/>
+        <Card/>
+    </div>
   )
 }
 

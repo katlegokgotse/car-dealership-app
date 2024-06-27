@@ -4,7 +4,9 @@ type Props = {}
 
 const Navigation = (props: Props) => {
   return (
-    <div>Navigation</div>
+    <nav>
+        
+    </nav>
   )
 }
 
