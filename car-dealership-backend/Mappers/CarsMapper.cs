@@ -53,7 +53,7 @@ namespace car_dealership_backend.Mappers
                 CarImage = updateCarDto.CarImage,
                 CarExtras = updateCarDto.CarExtras,
                 CarAdvertisementState = updateCarDto.CarAdvertisementState
-            }
+            };
         }
     }
 
