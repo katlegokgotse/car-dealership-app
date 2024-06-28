@@ -1,28 +1,28 @@
 import React, { ChangeEvent, useState, SyntheticEvent } from 'react'
+import './Search.css'
+interface Props {
+    handleSearchChange: (e: ChangeEvent<HTMLInputElement>) => void;
+    onSubmitSearch: (e: SyntheticEvent) => void;
+    search: string | undefined;
+}
 
-type Props = {}
-
-const Search = (props: Props) : JSX.Element => {
-    const [search, setSearch] = useState<string>("");
-
-    const handleChange = (e: ChangeEvent<HTMLInputElement>)=> {
-        setSearch(e.target.value);
-        console.log(e);
-    }
-
-    const submitSearch = (e: SyntheticEvent) => {
-        console.log(e);
-    }
+const Search = ({onSubmitSearch, search, handleSearchChange}: Props) : JSX.Element => {
+ 
   return (
     <div>
+        <form action=""
+            className='searchForm'
+            onChange={onSubmitSearch}>
         <input 
-        type="text" 
-        value={search} 
-        name="search" 
-        id="search"
-        placeholder='Search for car'
-        onChange={(e) => handleChange(e)} />
-        <button className='btnSearch' onClick={(e) => submitSearch(e)}/>
+        type="text"
+         value={search} 
+         className='btnSearch' 
+         onChange={handleSearchChange} 
+         placeholder='Enter vehicle name'
+         name='btnSearch'
+         id='input-search'/>
+        </form>
+        
     </div>
   )
 }
