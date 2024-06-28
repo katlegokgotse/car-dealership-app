@@ -1,21 +1,31 @@
 .Card{
     position: relative;
     margin: 0;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     border-radius: 5px;
 }
 .card-contents{
     padding: 10px;
-    width: 25%;
+    width: 50%;
 }
 .card-contents button{
     width: 100%;
-    padding: 8px;
+    padding: 9px;
     border-style: none;
+    
+    background-color: #372e2e;
+    color: rgb(250, 248, 195);
 }
 .card-image{
     width: 100%;
-    height: 35%;
+    height: 100%;
+}
+
+.card-image img{
+    width: 100%;
+    height: 35vh;
 }
 
 .card-text .card-money{

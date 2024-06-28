@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Cards/Card'
+import './CardList.css'
 
 interface Props{  
 
@@ -7,15 +8,15 @@ interface Props{
 
 const CardList = (props: Props) => {
   return (
-    <div>
+    <div className='CardList'>
         <Card 
         image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxLkf2I8NT1UzTbEuXIYxHakacuAjZMuR5kg&s' 
         model='i30N' 
         make='Hyunadi' 
         price={500000}
          year={2024}
-         state='used'
-         color='black'
+         state='new'
+         color='white'
          extras='none'
          />
           <Card 
