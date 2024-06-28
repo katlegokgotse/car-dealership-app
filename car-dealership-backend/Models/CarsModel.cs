@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using car_dealership_backend.Enums;
 
 namespace car_dealership_backend;
 public class CarModels

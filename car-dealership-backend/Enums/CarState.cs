@@ -1,6 +1,10 @@
 using System;
-public enum CarState
+
+namespace car_dealership_backend.Enums
 {
-    newCar,
-    secondHandCar
+    public enum CarState
+    {
+        newCar,
+        secondHandCar
+    }
 }

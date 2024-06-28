@@ -75,5 +75,10 @@ namespace car_dealership_backend.Controllers
             _cars.Remove(car);
             return NoContent();
         }
+        [HttpPost]
+        public IActionResult Create([FromBody] CreateCarRequest carRequest)
+        {
+
+        }
     }
 }

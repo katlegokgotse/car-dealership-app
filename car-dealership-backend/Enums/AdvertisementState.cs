@@ -1,7 +1,11 @@
 using System;
-public enum AdvertisementState
+
+namespace car_dealership_backend.Enums
 {
-    published,
-    archived,
-    draft
-};
+    public enum AdvertisementState
+    {
+        published,
+        archived,
+        draft
+    };
+}
