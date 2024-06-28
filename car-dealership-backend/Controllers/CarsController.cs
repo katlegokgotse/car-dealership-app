@@ -1,18 +1,23 @@
+using car_dealership_backend.Mappers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
+using car_dealership_backend.Dtos;
+using car_dealership_backend.Dtos.Cars;
+using car_dealership_backend.Data;
+
 namespace car_dealership_backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class CarsController : ControllerBase
     {
-        private readonly ILogger<CarsController> _logger;
+        private readonly ApplicationDBContext _context;
         private readonly List<CarModels> _cars;
-        public CarsController(ILogger<CarsController> logger)
+        public CarsController(ApplicationDBContext context)
         {
-            _logger = logger;
+            _context = context;
             _cars = new List<CarModels>();
         }
         // GET all cars
@@ -43,13 +48,9 @@ namespace car_dealership_backend.Controllers
         }
 
         // PUT update a car
-        [HttpPut("{id}")]
-        public IActionResult UpdateCar(int id, CarModels carModel)
+        [HttpPut("update/{id}")]
+        public IActionResult UpdateCar(int id, UpdateCarDto updateCarDto)
         {
-            if (id != carModel.CarId)
-            {
-                return BadRequest();
-            }
 
             var existingCar = _cars.FirstOrDefault(c => c.CarId == id);
             if (existingCar == null)
@@ -58,7 +59,15 @@ namespace car_dealership_backend.Controllers
             }
 
             // Update existingCar with carModel properties
-            existingCar.CarModel = carModel.CarModel; // Example update
+            existingCar.CarMake = updateCarDto.CarMake;
+            existingCar.CarModel = updateCarDto.CarModel;
+            existingCar.CarYear = updateCarDto.CarYear;
+            existingCar.CarColour = updateCarDto.CarColour;
+            existingCar.CarState = updateCarDto.CarState;
+            existingCar.CarExtras = updateCarDto.CarExtras;
+            existingCar.CarPrice = updateCarDto.CarPrice;
+            existingCar.CarImage = updateCarDto.CarImage;
+            existingCar.CarAdvertisementState = updateCarDto.CarAdvertisementState;
 
             return NoContent();
         }
@@ -75,10 +84,23 @@ namespace car_dealership_backend.Controllers
             _cars.Remove(car);
             return NoContent();
         }
-        [HttpPost]
-        public IActionResult Create([FromBody] CreateCarRequest carRequest)
+        [HttpPost("create")]
+        public IActionResult Create([FromBody] CreateCarRequestDto carRequestDto)
         {
-
+            var carModel = carRequestDto.ToCreateCarFromCreateDto();
+            _context.carsModels.Add(carModel);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetCarById), new { id = carModel.CarId }, carModel.CarFromDto());
+        }
+        [HttpGet("details/{id}")]
+        private IActionResult GetCarById([FromRoute] int id)
+        {
+            var cars = _context.carsModels.Find(id);
+            if (cars == null)
+            {
+                return NotFound();
+            }
+            return Ok(cars.CarFromDto());
         }
     }
 }
