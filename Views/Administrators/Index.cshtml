@@ -1,0 +1,68 @@
+﻿@model CarDealershipApp.Models.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" asp-controller="Administrators">Create New Administrator</a>
+    <a asp-action="Create" asp-controller="Cars">Create New Car</a>
+</p>
+
+<h2>Administrators</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Administrators.FirstOrDefault().AdministratorUserName)</th>
+            <th>@Html.DisplayNameFor(model => model.Administrators.FirstOrDefault().AdministratorPassword)</th>
+            <th>@Html.DisplayNameFor(model => model.Administrators.FirstOrDefault().AdministratorEmail)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Administrators ?? Enumerable.Empty<Administrator>())
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.AdministratorUserName)</td>
+                <td>@Html.DisplayFor(modelItem => item.AdministratorPassword)</td>
+                <td>@Html.DisplayFor(modelItem => item.AdministratorEmail)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.AdministratorID" asp-controller="Administrators">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.AdministratorID" asp-controller="Administrators">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.AdministratorID" asp-controller="Administrators">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Cars</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Cars.First().CarMake)</th>
+            <th>@Html.DisplayNameFor(model => model.Cars.FirstOrDefault().CarModel)</th>
+            <th>@Html.DisplayNameFor(model => model.Cars.FirstOrDefault().CarYear)</th>
+            <th>@Html.DisplayNameFor(model => model.Cars.FirstOrDefault().CarPrice)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.Cars ?? Enumerable.Empty<Cars>())
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => car.CarMake)</td>
+                <td>@Html.DisplayFor(modelItem => car.CarModel)</td>
+                <td>@Html.DisplayFor(modelItem => car.CarYear)</td>
+                <td>@Html.DisplayFor(modelItem => car.CarPrice)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@car.CarId" asp-controller="Cars">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@car.CarId" asp-controller="Cars">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@car.CarId" asp-controller="Cars">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
