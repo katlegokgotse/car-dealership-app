@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\views\\administrators\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\views\\administrators\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\models\\cars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\models\\cars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\views\\cars\\moreinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\views\\cars\\moreinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\models\\interestedperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\models\\interestedperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|c:\\users\\user\\source\\repos\\cardealershipapp\\cardealershipapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930FDBBF-A5C3-4282-81BD-9CEFFA216E77}|CarDealershipApp\\CarDealershipApp.csproj|solutionrelative:cardealershipapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cars.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Models\\Cars.cs",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Models\\Cars.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Models\\Cars.cs",
+              "RelativeToolTip": "CarDealershipApp\\Models\\Cars.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAADwvxkAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:52:01.925Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Administrators\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Views\\Administrators\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Administrators\\Index.cshtml",
+              "RelativeToolTip": "CarDealershipApp\\Views\\Administrators\\Index.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAEgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T21:24:05.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Views\\Cars\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Cars\\Index.cshtml",
+              "RelativeToolTip": "CarDealershipApp\\Views\\Cars\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T21:21:18.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Cars\\Details.cshtml",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Views\\Cars\\Details.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Cars\\Details.cshtml",
+              "RelativeToolTip": "CarDealershipApp\\Views\\Cars\\Details.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAQwDsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T20:55:38.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CarDealershipApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T20:51:36.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "CarDealershipApp\\Controllers\\CarsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:49:48.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CarDealershipApp\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:49:46.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "CarDealershipApp\\Data\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:49:01.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MoreInfo.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Cars\\MoreInfo.cshtml",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Views\\Cars\\MoreInfo.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Views\\Cars\\MoreInfo.cshtml",
+              "RelativeToolTip": "CarDealershipApp\\Views\\Cars\\MoreInfo.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T20:48:19.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InterestedPerson.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Models\\InterestedPerson.cs",
+              "RelativeDocumentMoniker": "CarDealershipApp\\Models\\InterestedPerson.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CarDealershipApp\\CarDealershipApp\\Models\\InterestedPerson.cs",
+              "RelativeToolTip": "CarDealershipApp\\Models\\InterestedPerson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:46:38.631Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
